@@ -1,0 +1,26 @@
+
+AFTER SCAFFOLDING
+-----------------
+1) Copy the sample .env into each agent folder and paste your API key:
+   cp .env.sample learning_coach_agent/.env
+   cp .env.sample content_creator_agent/.env
+   # Then open each .env and paste the API key value after GOOGLE_API_KEY=
+
+2) Create virtualenv and install requirements (if you haven't):
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+
+3) Run ADK dev UI:
+   adk web
+   # Open http://127.0.0.1:8000 and choose the agent.
+
+4) Example prompts to try in Dev UI:
+   - (learning_coach_agent) "Teach me how Django migrations work in 4 steps"
+   - (learning_coach_agent) "Make a 5-question quiz on Python lists"
+   - (learning_coach_agent) "Journal: Today I learned about class-based views"
+
+   - (content_creator_agent) "Write a caption for a 30-second TikTok about debugging"
+   - (content_creator_agent) "Make a 12-song playlist for Afrobeat, Old School R&B"
+
+5) Data will be stored locally in `agents_data.db`.
