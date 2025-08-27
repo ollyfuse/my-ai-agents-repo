@@ -2,3 +2,6 @@
 agents_data.db
 *.env
 **/.env
+
+__pycache__/
+*.pyc
