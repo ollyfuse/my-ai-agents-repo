@@ -1,0 +1,4 @@
+.venv/
+agents_data.db
+*.env
+**/.env
